@@ -63,7 +63,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Converted Images Folder Location"
+                    android:text="..."
 					android:background="#FFBCFF93"
 					
                     android:id="@+id/convertedimages"/>
@@ -81,7 +81,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Interestitials"
+                    android:text="."
                     android:layout_marginBottom="10dp"
 					android:background="@drawable/shape3"
 					android:visible="false"
@@ -89,8 +89,9 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reward AdMob"
+                    android:text="🤫Dont Touch 🔞"
 					android:background="@drawable/shape3"
+					android:textColor="#FFD60000"
 					android:visible="false"
                     android:id="@+id/adsReward"/>
             </LinearLayout>
