@@ -81,7 +81,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="."
+                    android:text="🥰"
                     android:layout_marginBottom="10dp"
 					android:background="@drawable/shape3"
 					android:visible="false"
