@@ -288,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
 				
 				ContentResolver resolver = getContentResolver();
 				ContentValues contentvalues = new ContentValues();
-				contentvalues.put(MediaStore.MediaColumns.DISPLAY_NAME,"Image_"+".jpg");
+				contentvalues.put(MediaStore.MediaColumns.DISPLAY_NAME,"Image_"+System.currentTimeMillis()/1000012345+".jpg");
 				contentvalues.put(MediaStore.MediaColumns.MIME_TYPE,"image/jpg");
 				contentvalues.put(MediaStore.MediaColumns.RELATIVE_PATH,Environment.DIRECTORY_PICTURES+File.separator+"Converted jpg images");
 				Uri image_uru = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,contentvalues);
