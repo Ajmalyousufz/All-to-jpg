@@ -263,10 +263,7 @@ public class MainActivity extends AppCompatActivity {
                     // update the preview image in the layout 
 
                     image_picked.setImageURI(selectedImageUri); 
-					Uri selectedUri = Uri.parse("Phone Storage /"+Environment.DIRECTORY_PICTURES+"/Converted jpg images");
-
-					String s = selectedUri.toString();
-					view_converted_images.setText("Completed ✅\nSaved Location : "+s);
+			
 
                 } 
 				}
@@ -298,6 +295,10 @@ public class MainActivity extends AppCompatActivity {
 				fos =resolver.openOutputStream(Objects.requireNonNull(image_uru));
 				bitmap.compress(Bitmap.CompressFormat.JPEG,100,fos);
 				Objects.requireNonNull(fos);
+				Uri selectedUri = Uri.parse("Phone Storage /"+Environment.DIRECTORY_PICTURES+"/Converted jpg images");
+
+				String s = selectedUri.toString();
+				view_converted_images.setText("Completed ✅\nSaved Location : "+s);
 				toast("✅ Completed ✅\n\nImage Saved to : \n\n"+Environment.DIRECTORY_PICTURES+File.separator+"Converted jpg images : \n\n"+"As jpg");
 			}
 			else{
@@ -314,6 +315,10 @@ public class MainActivity extends AppCompatActivity {
 				}
 				bitmap.compress(Bitmap.CompressFormat.JPEG,100,fos);
 				toast("Image Saved to \n\n"+file.toString()+"\n\n As jpg");
+				Uri selectedUri = Uri.parse("Phone Storage /"+Environment.DIRECTORY_PICTURES+"/Converted jpg images");
+
+				String s = selectedUri.toString();
+				view_converted_images.setText("Completed ✅\nSaved Location : "+s);
 				try{
 					fos.flush();
 					fos.close();
