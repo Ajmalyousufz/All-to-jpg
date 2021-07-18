@@ -18,6 +18,7 @@
         android:id="@+id/rootview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+		android:background="#FFBCFF93"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <LinearLayout
@@ -37,6 +38,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pick image"
+					android:textColor="#ffffff"
+					android:padding="10dp"
+					android:background="@drawable/btn_shape"
                     android:layout_marginBottom="10dp"
                     android:id="@+id/pickimage"/>
 				<ImageView
@@ -50,12 +54,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Click here to \n Convert Image"
+					android:background="@drawable/btn_shape2"
+					android:textColor="#ffffff"
+					android:padding="10dp"
+					android:layout_margin="10dp"
                     android:id="@+id/buttonconvert"/>
 				
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Converted Images Folder Location"
+					android:background="#FFBCFF93"
+					
                     android:id="@+id/convertedimages"/>
 				
 				 
@@ -73,12 +83,14 @@
                     android:layout_height="wrap_content"
                     android:text="Interestitials"
                     android:layout_marginBottom="10dp"
+					android:background="@drawable/shape3"
 					android:visible="false"
                     android:id="@+id/adsInterestitials"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Reward AdMob"
+					android:background="@drawable/shape3"
 					android:visible="false"
                     android:id="@+id/adsReward"/>
             </LinearLayout>
